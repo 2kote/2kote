@@ -23,6 +23,33 @@
 		<div id="helpdesk_widget"></div>
 		<script type="text/javascript" src="https://twokote.redmineup.com/helpdesk_widget/widget.js"></script>
       	</span>
+		<script>
+  RedmineHelpdeskWidget.config({
+    color: '#af1287',
+    translation: {
+      nameLabel: 'Please enter your name here',
+      emailLabel: 'Please put your email here',
+      descriptionLabel: 'What question do you have?',
+      createButtonLabel: 'Ask quesiton',
+      createSuccessDescription: 'Thank you for your question!',
+      createErrorLabel: 'Something goes wrong :(...',
+      subjectLabel: 'Subject',
+      createSuccessLabel: 'Your question successfully created'
+    },
+    identify: {
+      nameValue: 'User',
+      emailValue: 'test+1234@test.com',
+      subjectValue: 'This is my question',
+      trackerValue: 'Bug',
+      projectValue: 'Support',
+      customFieldValues: {
+        'test': 'Field value'
+      }
+    },
+    attachment: false,
+    title: 'How can we help you?'
+  });
+</script>
 	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
